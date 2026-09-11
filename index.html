@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz de Futebol</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="quiz-container">
+        <h1>⚽ Quiz de Futebol</h1>
+        
+        <!-- Tela do Quiz -->
+        <div id="quiz-screen">
+            <div id="question" class="question">Carregando pergunta...</div>
+            <div id="options" class="options-container">
+                <!-- As opções serão inseridas dinamicamente pelo JavaScript -->
+            </div>
+            <div id="progress" class="progress">Pergunta 1 de 5</div>
+        </div>
+
+        <!-- Tela de Resultado (escondida no início) -->
+        <div id="result-screen" class="result-screen hide">
+            <h2>Fim do Quiz! 🎉</h2>
+            <p id="score-text">Você acertou X de Y perguntas.</p>
+            <button onclick="restartQuiz()">Jogar Novamente</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
